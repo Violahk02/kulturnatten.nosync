@@ -46,3 +46,9 @@ p {
   gap: 60px;
   margin-top: 20px;
 }
+
+.filter_container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
