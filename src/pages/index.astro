@@ -1,5 +1,6 @@
 ---
 import Eventscard from '../components/Eventscard.astro';
+import Nav from '../components/Menu.astro';
 import "../styles/style.css";
 ---
 
@@ -13,7 +14,9 @@ import "../styles/style.css";
 		<title>Astro Basics</title>
 	</head>
 	<body>
-		
+		<header>
+			<Nav/>
+		</header>
 	<div class="events_container">
 		<Eventscard billede="../img/event_boern.webp" overskrift="Tryllekunst" kategori="Børn" farve="rgba(255, 235, 246, 1)" svg="./lokation.svg" lokation="Helsingør Bycenter" tid="Kl 19.00"/>
 		<Eventscard billede="../img/kunst.webp" overskrift="Kunstudstilling" kategori="Kunst" farve="rgba(231, 237, 255, 1)" svg="./lokation.svg" lokation="Kunsthuset" tid="Kl 19.30"/>
