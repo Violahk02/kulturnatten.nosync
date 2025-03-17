@@ -1,35 +1,9 @@
 ---
-import Eventscard from '../components/Eventscard.astro';
-import Filterkategori from '../components/Filterkategori.astro';
-import Filtertid from '../components/Filtertid.astro';
-import Heroprogramside from '../components/Heroprogramside.astro';
+
 import "../styles/style.css";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-<Heroprogramside billede="../img/hero_programside.webp" overskrift="PROGRAM" aarstal="2025" knap1="ALLE BEGIVENHEDER" knap2="SE TIDSPLAN"/>
-	
-<div id="filter_container">
-		<Filterkategori overskrift="Kategori" kategori="Musik" kategori2="Kunst" kategori3="Mad" kategori4="Børn" kategori5="Workshop" kategori6="Kulturarv"/>
-		<Filtertid overskrift="Tid" tid="Kl 16.00" tid2="Kl 18.00" tid3="Kl 19.00" tid4="Kl 19.30" tid5="Kl 20.00" tid6="Kl 21.00"/>
-	</div>
 
-	<div class="events_container">
-		<Eventscard billede="../img/event_boern.webp" overskrift="Tryllekunst" kategori="Børn" farve="rgba(255, 235, 246, 1)" svg="./lokation.svg" lokation="Helsingør Bycenter" tid="Kl 19.00"/>
-		<Eventscard billede="../img/kunst.webp" overskrift="Kunstudstilling" kategori="Kunst" farve="rgba(231, 237, 255, 1)" svg="./lokation.svg" lokation="Kunsthuset" tid="Kl 19.30"/>
-		<Eventscard billede="../img/kor.webp" overskrift="Helsingør Kor" kategori="Musik" farve="rgba(254, 160, 61, 1)" svg="./lokation.svg" lokation="Helsingør Bycenter" tid="Kl 20.00"/>
-		<Eventscard billede="../img/moellen.webp" overskrift="Besøg Møllen" kategori="Kulturarv" farve="rgba(162, 210, 154, 1)" svg="./lokation.svg" lokation="Møllevænget" tid="Kl 18.00"/>
-		<Eventscard billede="../img/skov.webp" overskrift="Skovvandring" kategori="Workshop" farve="rgba(255, 224, 147, 1)" svg="./lokation.svg" lokation="Skoven" tid="Kl 16.00"/>
-		<Eventscard billede="../img/vin.webp" overskrift="Vinsmagning" kategori="Mad" farve="rgba(226, 100, 121, 1)" svg="./lokation.svg" lokation="Gågaden" tid="Kl 21.00"/>
-	</div>
-	</body>
 </html>

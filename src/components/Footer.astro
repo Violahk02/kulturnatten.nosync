@@ -5,29 +5,80 @@
 <footer>
   <div class="footer_container">
     <div class="footer_indhold">
-      <div class="footer_grid">
-        <h3>Kontaktoplysninger</h3>
+      <div class="footer_bokse">
+        <h3 class="h3_footer">Kontaktoplysninger</h3>
         <p>Har du spørgsmål til Kulturnat?</p>
         <p>E-mail: kulturnatten@elsinore2032.dk</p>
       </div>
-      <div class="footer_grid">
-        <h3>Genveje</h3>
-        <a href="#">Program</a>
-        <a href="#">Praktiske oplysninger</a>
-        <a href="#">Kontakt</a>
+      <div class="footer_bokse">
+        <h3 class="h3_footer">Genveje</h3>
+        <ul class="no_bullets">
+          <li><a class="listetekst" href="/program">Program</a></li>
+          <li><a class="listetekst" href="#">Praktiske oplysninger</a></li>
+          <li><a class="listetekst" href="#">Kontakt</a></li>
+        </ul>
       </div>
-
-      <div class="footer_grid">
-        <h3>Følg os på</h3>
-
-        <img src="../assets/facebook.svg" alt="" />
-
-        <ul></ul>
+      <div class="footer_bokse">
+        <h3 class="h3_footer">Følg os på</h3>
+        <a href="https://www.facebook.com/kulturnathelsingor">
+          <img src="facebook.svg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/kulturnathelsingor/">
+          <img src="instagram.svg" alt="" />
+        </a>
       </div>
     </div>
+    <hr class="linje" />
+    <div class="footer_bund">
+      <img src="sponsor1.svg" alt="Kulturhovedstad logo" />
+      <img src="knlogo.svg" alt="Kulturnattens logo" />
+      <img src="sponsor2.svg" alt="Sponsor logo2" />
+    </div>
   </div>
-
-  <div class="footer-bottom">
-    <p></p>
+  <div class="copyright">
+    <p>©2025 Kulturnat Helsingør</p>
   </div>
 </footer>
+<style>
+  .footer_indhold {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    justify-items: center;
+    justify-content: center;
+  }
+  .listetekst {
+    text-decoration: none;
+    color: white;
+    font-family: Futura;
+    font-size: 14px;
+  }
+  .no_bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .h3_footer {
+    margin-bottom: 10px;
+  }
+  .footer_bokse {
+    color: white;
+    text-align: center;
+  }
+  .linje {
+    width: 90%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid white;
+  }
+  .copyright {
+    justify-items: center;
+    margin-top: 50px;
+    color: white;
+  }
+
+  .footer_bund {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+</style>
