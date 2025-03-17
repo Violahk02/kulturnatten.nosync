@@ -44,4 +44,5 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 60px;
+  margin-top: 20px;
 }
