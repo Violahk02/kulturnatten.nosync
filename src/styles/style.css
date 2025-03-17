@@ -52,3 +52,9 @@ p {
   justify-content: start;
   gap: 20px;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
