@@ -3,3 +3,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Fonts */
+@font-face {
+  font-family: "Futura";
+  src: url("/public/fonts/futura/futur.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Afacad";
+  src: url("/public/fonts/Afacad/Afacad-VariableFont_wght.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: grey;
+  margin: 40px;
+}
+
+h2 {
+  font-family: Futura;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: Futura;
+  font-weight: 50;
+}
+
+p {
+  font-family: Afacad;
+}
+
+.events_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  gap: 60px;
+}

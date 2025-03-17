@@ -1,0 +1,88 @@
+---
+const {billede, overskrift, kategori, svg, lokation, tid, farve} = Astro.props;
+---
+<a href="">
+    <article>
+        <img src={billede} alt="">
+        <div class="text" >
+            <div class="text_1">
+                <h2>{overskrift}</h2>
+                <p class="kategori" style=`background-color:${farve}`>{kategori}</p>
+            </div>
+            <div class="text_2">
+                <div class="lokation">
+                    <img src={svg} alt="">
+                    <p>{lokation}</p>
+                </div>
+                <h2 class="tid">{tid}</h2>
+            </div>
+        </div>
+    </article>
+    </a>
+
+    <style>
+        article{
+        background-color: white;
+        border-radius: 20px;
+        width: 355px;
+        }
+    
+        img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    a:hover{
+        transform: scale(1.03); /* Zoomer lidt ud */
+    }
+    
+    h3{
+        font-size: 1rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+        margin-left: 8px;
+    }
+    
+    .kategori{
+        padding: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border-radius: 100px;
+    }
+    
+    .tid{
+        font-size: 1.2rem;
+    }
+    
+    .text{
+        padding: 10px;
+    }
+    
+    .text_1{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    
+    .text_2{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 18px;
+        }
+    }
+    
+    .lokation{
+        display: flex;
+        justify-content: start;
+    }
+    </style>
