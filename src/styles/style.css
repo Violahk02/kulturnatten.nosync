@@ -22,15 +22,6 @@
 }
 
 body {
-  background: linear-gradient(
-    to bottom,
-    #224097 19%,
-    #a24c92 62%,
-    #df7284 78%,
-    #faaa87 89%,
-    #ffc22d 100%
-  );
-  background: co;
   margin: 40px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,7 +48,7 @@ p {
   margin-top: 20px;
 }
 
-.filter_container {
+#filter_container {
   display: flex;
   justify-content: start;
   gap: 20px;
