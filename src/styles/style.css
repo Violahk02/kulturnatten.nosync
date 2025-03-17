@@ -32,9 +32,7 @@ body {
   );
   margin: 40px;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
 }
 
 h2 {
@@ -56,4 +54,10 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   gap: 60px;
   margin-top: 20px;
+}
+
+.filter_container {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
 }
