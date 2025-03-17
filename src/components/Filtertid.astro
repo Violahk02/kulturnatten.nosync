@@ -1,0 +1,93 @@
+---
+const {overskrift, tid, tid2, tid3, tid4, tid5, tid6} = Astro.props;
+---
+
+<details>
+    <summary class="filter_header">{overskrift}</summary>
+    <div class="filter_container">
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #FDE4A6;"></span>
+            {tid}
+        </label>
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #F89A4F;"></span>
+            {tid2}
+        </label>
+        
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #D45E6A;"></span>
+            {tid3}
+        </label>
+        
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #F9E7F0;"></span>
+            {tid4}
+        </label>
+        
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #DEE3F9;"></span>
+            {tid5}
+        </label>
+        
+        <label class="filter">
+            <input type="checkbox">
+            <span class="color-box" style="background-color: #B5D9B2;"></span>
+            {tid6}
+        </label>
+    </div>
+    </div>
+</details>
+
+
+<style>
+    .filter_header{
+        font-size: 1.5rem;
+        font-family: Futura;
+        font-weight: medium;
+        width: 200px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 100px;
+    }
+
+    .filter_container {
+    position: absolute;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    width: 150px;
+    border-radius: 0 0 20px 20px;
+}
+
+.filter{
+        font-size: 1.5rem;
+        font-family: Afacad;
+        font-weight: 100;
+    }
+
+   /* Skjuler standard checkbox */
+.filter input {
+    display: none;
+    
+}
+
+/* Style til farvede bokse */
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+}
+
+</style>
