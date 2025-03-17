@@ -2,6 +2,7 @@
 import Eventscard from '../components/Eventscard.astro';
 import "../styles/style.css";
 import Buttons from '../components/Buttons.astro';
+import Nav from '../components/Menu.astro';
 ---
 
 <!doctype html>
@@ -14,6 +15,9 @@ import Buttons from '../components/Buttons.astro';
         <title>Astro Basics</title>
     </head>
     <body>
+		<header>
+			<Nav/>
+		</header>
         
         <Buttons color="" 
         title="SE HELE PROGRAMMET HER"/>
