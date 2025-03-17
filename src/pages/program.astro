@@ -1,5 +1,8 @@
 ---
 import Eventscard from '../components/Eventscard.astro';
+
+import Filter from '../components/Filter.astro';
+import Footer from "../components/Footer.astro";
 import Filterkategori from '../components/Filterkategori.astro';
 import Filtertid from '../components/Filtertid.astro';
 import Nav from '../components/Menu.astro';
@@ -32,5 +35,8 @@ import "../styles/style.css";
 		<Eventscard billede="../img/skov.webp" overskrift="Skovvandring" kategori="Workshop" farve="rgba(255, 224, 147, 1)" svg="./lokation.svg" lokation="Skoven" tid="Kl 16.00"/>
 		<Eventscard billede="../img/vin.webp" overskrift="Vinsmagning" kategori="Mad" farve="rgba(226, 100, 121, 1)" svg="./lokation.svg" lokation="Gågaden" tid="Kl 21.00"/>
 	</div>
+
+<Footer/>
+
 	</body>
 </html>
