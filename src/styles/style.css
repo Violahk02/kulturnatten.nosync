@@ -22,8 +22,19 @@
 }
 
 body {
-  background: linear-gradient(to bottom, #224097 19%, #a24c92 62%, #df7284 78%, #faaa87 89%, #ffc22d 100%);
+  background: linear-gradient(
+    to bottom,
+    #224097 19%,
+    #a24c92 62%,
+    #df7284 78%,
+    #faaa87 89%,
+    #ffc22d 100%
+  );
   margin: 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h2 {
