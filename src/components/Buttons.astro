@@ -1,4 +1,37 @@
 ---
+
+const {title, color} = Astro.props
+
+---
+
+<button style=`background-color:${color}`>
+    <p>{title}</p>
+</button>
+
+
+
+
+
+<style>
+    button{
+        border: none;
+        border-radius: 100px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #F5B886;
+    }
+
+ 
+
+    p{
+        color:#193B9C;
+        font-family: Futura;
+        font-size: 1.5rem;
+    }
+
+
+=======
 const {title} = Astro.props
 ---
 
@@ -7,5 +40,4 @@ const {title} = Astro.props
 </button>
 
 <style>
-    
 </style>
