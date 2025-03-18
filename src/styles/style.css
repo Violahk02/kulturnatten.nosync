@@ -70,6 +70,8 @@ p {
 }
 
 #Tidsplantitle {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   font-size: 8.1rem;
   color: #ffffff;
 }
