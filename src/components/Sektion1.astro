@@ -1,0 +1,104 @@
+---
+const { baggrundsbillede, sektionh1, pil } = Astro.props;
+import Eventscard from "./Eventscard.astro";
+---
+
+<section class="events_section">
+  <img src={baggrundsbillede} alt="" />
+  <h1 class="events">{sektionh1}</h1>
+  <div class="events_container">
+    <div class="event_1">
+      <Eventscard
+        billede="../img/moellen.webp"
+        overskrift="Besøg Møllen"
+        kategori="Kulturarv"
+        farve="rgba(162, 210, 154, 1)"
+        svg="./lokation.svg"
+        lokation="Møllevænget"
+        tid="Kl 18.00"
+      />
+    </div>
+    <div class="event_2">
+      <Eventscard
+        billede="../img/kunst.webp"
+        overskrift="Kunstudstilling"
+        kategori="Kunst"
+        farve="rgba(231, 237, 255, 1)"
+        svg="./lokation.svg"
+        lokation="Kunsthuset"
+        tid="Kl 19.30"
+      />
+    </div>
+    <div class="event_3">
+      <Eventscard
+        billede="../img/event_boern.webp"
+        overskrift="Tryllekunst"
+        kategori="Børn"
+        farve="rgba(255, 235, 246, 1)"
+        svg="./lokation.svg"
+        lokation="Helsingør Bycenter"
+        tid="Kl 19.00"
+      />
+    </div>
+  </div>
+  <img class="pil" src={pil} alt="" />
+</section>
+
+<style>
+  .events_section {
+    display: grid;
+    margin-top: 15%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .events_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    gap: 60px;
+    margin: 40px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* margin-top: 20%; */
+  }
+
+  .event_1 {
+    place-content: center start;
+  }
+
+  .event_2 {
+    place-content: center;
+  }
+
+  .event_3 {
+    place-content: center end;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* align-self: stretch; */
+  }
+
+  h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: Futura;
+    color: black;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .events {
+    place-self: start center;
+    margin-top: 10%;
+  }
+
+  .pil {
+    width: 5%;
+    place-self: end center;
+    margin-bottom: 40px;
+  }
+</style>
