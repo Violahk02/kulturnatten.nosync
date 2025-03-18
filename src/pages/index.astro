@@ -1,32 +1,43 @@
 ---
-import Eventscard from '../components/Eventscard.astro';
+import Eventscard from "../components/Eventscard.astro";
 import "../styles/style.css";
-import Buttons from '../components/Buttons.astro';
-import Nav from '../components/Menu.astro';
-import Hero from '../components/Hero.astro';
-import Instascroll from '../components/Instascroll.astro';
+import Buttons from "../components/Buttons.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Menu.astro";
+import Hero from "../components/Hero.astro";
+import Instascroll from "../components/Instascroll.astro";
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>Astro Basics</title>
-    </head>
-    <body>
-		<header>
-			<Nav/>
-		</header>
-        <Hero img="public/img/hero.webp" tekst="Tikøb 19/09 - Helsingør & Espergærde 26/09" />
-        
-        <Buttons color="" 
-        title="SE HELE PROGRAMMET HER"/>
-        <Buttons color="#E7EDFF" 
-        title="OPRET BEGIVENHED HER"/>
-        
-        <Instascroll overskrift="Tag os! #helsingørkn" billede1="../public/img/insta1.webp" billede2="../public/img/insta2.webp" billede3="../public/img/insta3.webp" billede4="../public/img/insta4.webp" billede5="../public/img/insta1.webp"/>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+  <body>
+    <header>
+      <Nav />
+    </header>
+    <Hero
+      img="public/img/hero.webp"
+      tekst="Tikøb 19/09 - Helsingør & Espergærde 26/09"
+    />
+
+    <Buttons color="" title="SE HELE PROGRAMMET HER" />
+    <Buttons color="#E7EDFF" title="OPRET BEGIVENHED HER" />
+
+    <Instascroll
+      overskrift="Tag os! #helsingørkn"
+      billede1="../public/img/insta1.webp"
+      billede2="../public/img/insta2.webp"
+      billede3="../public/img/insta3.webp"
+      billede4="../public/img/insta4.webp"
+      billede5="../public/img/insta1.webp"
+    />
+
+    <Footer />
+  </body>
 </html>
