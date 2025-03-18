@@ -1,31 +1,36 @@
 ---
-const {overskrift, billede1, billede2, billede3, billede4, billede5} = Astro.props;
+const { overskrift, billede1, billede2, billede3, billede4, billede5 } =
+  Astro.props;
 ---
 
 <div class="instascroll">
-    <h1>{overskrift}</h1>
-    <div class="scroll_container">
-        <img src={billede1} alt="">
-        <img src={billede2} alt="">
-        <img src={billede3} alt="">
-        <img src={billede4} alt="">
-        <img src={billede5} alt="">
-    </div>
+  <h1>{overskrift}</h1>
+  <div class="scroll_container">
+    <img src={billede1} alt="" />
+    <img src={billede2} alt="" />
+    <img src={billede3} alt="" />
+    <img src={billede4} alt="" />
+    <img src={billede5} alt="" />
+  </div>
 
-<style>
-    h1{
-    text-align: center;
-    margin: 30px;
-    font-weight: 200;
+  <style>
+    h1 {
+      text-align: center;
+      margin: 30px;
+      font-weight: 200;
+      font-size: 2rem;
     }
 
-    img{
-        width: 340px;
+    img {
+      width: 340px;
     }
 
-    .scroll_container{
-        display: flex;
-        overflow-x: scroll;
-        gap: 50px;  
+    .scroll_container {
+      display: flex;
+      overflow-x: scroll;
+      gap: 50px;
+      max-width: 100vw;
+      padding: 30px;
     }
-</style>
+  </style>
+</div>

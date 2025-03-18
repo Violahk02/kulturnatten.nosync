@@ -1,0 +1,55 @@
+---
+const { baggrundsbillede, svg } = Astro.props;
+import Instascroll from "./Instascroll.astro";
+---
+
+<section class="insta_section">
+  <img src={baggrundsbillede} alt="" />
+  <div class="insta_container">
+    <div class="insta">
+      <Instascroll
+        overskrift="Tag os! #helsingørkn"
+        billede1="../public/img/insta1.webp"
+        billede2="../public/img/insta2.webp"
+        billede3="../public/img/insta3.webp"
+        billede4="../public/img/insta4.webp"
+        billede5="../public/img/insta1.webp"
+      />
+    </div>
+  </div>
+  <img class="pil" src={svg} alt="" />
+</section>
+
+<style>
+  .insta_section {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: -8%;
+  }
+
+  .insta_container {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .insta {
+    place-self: center;
+    margin-top: -10%;
+  }
+
+  img {
+    width: 100%;
+
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .pil {
+    width: 4%;
+    place-self: end center;
+    margin-bottom: 6%;
+  }
+</style>
