@@ -7,16 +7,67 @@
             <img src="knlogo.svg" alt="Logo" />
         </a>
     </div>
+    <div class="links">
     <a href="/program">Program</a>
     <a href="#">Arrangør</a>
     <a href="#">Galleri</a>
     <a href="#">Om Kulturnatten</a>
+    <button class="switch">
+        <span>DK</span> 
+        <span>EN</span>
+    </button>
+    </div>
 </nav>
 
 <style>
-    a{
-        text-decoration: none;
-        font-family: Futura;
-        color: white;
+    nav {
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
     }
+
+   
+    .links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .logo img{
+        margin-top: -30px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: Futura, sans-serif;
+        color: white;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s ease;
+    }
+    a:hover {
+        cursor: pointer;
+    }
+    .switch {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    background-color: #3F3F3F;
+    border: 1px solid white;
+    color: white;
+    font-family: Futura, sans-serif;
+    font-weight: bold;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 20px; 
+}
+
+span{
+    margin-left: 3px;
+}
+
+span:hover {
+    color: #193B9C;
+}
 </style>
