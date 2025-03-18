@@ -25,7 +25,14 @@ body {
   margin: 40px;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(to bottom, #224097 19%, #a24c92 62%, #df7284 78%, #faaa87 89%, #ffc22d 100%);
+  background: linear-gradient(
+    to bottom,
+    #224097 19%,
+    #a24c92 62%,
+    #df7284 78%,
+    #faaa87 89%,
+    #ffc22d 100%
+  );
   background: co;
 }
 
@@ -55,4 +62,16 @@ p {
   display: flex;
   justify-content: start;
   gap: 20px;
+}
+
+.Tidsplantitle {
+  font-size: 8.1rem;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .Tidsplantitle {
+    font-size: 5rem;
+    color: #ffffff;
+  }
 }
