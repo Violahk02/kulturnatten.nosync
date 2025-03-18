@@ -1,0 +1,78 @@
+---
+const { baggrundsbillede, overskrift, tekst, tekst2, svg } = Astro.props;
+import Buttons from "./Buttons.astro";
+---
+
+<section class="arrangoer_section">
+  <img src={baggrundsbillede} alt="" />
+  <h1 class="overskrift">{overskrift}</h1>
+  <p class="tekst1">{tekst}</p>
+  <p class="tekst2">{tekst2}</p>
+  <div class="knap">
+    <Buttons color="#E7EDFF" title="OPRET BEGIVENHED HER" />
+  </div>
+  <img class="pil" src={svg} alt="" />
+</section>
+
+<style>
+  .arrangoer_section {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: -8%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    /* align-self: stretch; */
+  }
+
+  h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-family: Futura;
+    color: black;
+    font-size: 3rem;
+    font-weight: 200;
+  }
+
+  .overskrift {
+    place-self: start center;
+    margin-top: 10%;
+  }
+
+  p {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 80%;
+  }
+
+  .tekst1 {
+    place-self: center;
+    margin-bottom: 20%;
+  }
+
+  .tekst2 {
+    place-self: center;
+  }
+
+  .pil {
+    width: 4%;
+    place-self: end center;
+    margin-bottom: 5%;
+  }
+
+  .knap {
+    display: block;
+    place-self: end center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 16%;
+  }
+</style>
