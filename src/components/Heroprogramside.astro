@@ -1,87 +1,90 @@
 ---
-const {overskrift, aarstal, billede, knap1, knap2} = Astro.props;
+const { overskrift, aarstal, billede, knap1, knap2 } = Astro.props;
 ---
 
 <div class="hero">
-    <img src={billede} alt="">
-    <h1 class="program">{overskrift}</h1>
-    <h1 class="aarstal">{aarstal}</h1>
-    <a href="#filter_container" class="button1"><img src="./pil.svg" alt="">{knap1}</a>
-    <a href="#" class="button2"><img src="./pil.svg" alt="">{knap2}</a>
+  <img src={billede} alt="" />
+  <h1 class="program">{overskrift}</h1>
+  <h1 class="aarstal">{aarstal}</h1>
+  <a href="#filter_container" class="button1"
+    ><img src="./pil.svg" alt="" />{knap1}</a
+  >
+  <a href="#Tidsplantitle" class="button2"
+    ><img src="./pil.svg" alt="" />{knap2}</a
+  >
 </div>
 
 <style>
-
-.hero{
+  .hero {
     width: 100%;
     display: grid;
     margin-bottom: 40px;
-}
+  }
 
-img {
+  img {
     width: 100%;
     object-fit: cover;
     grid-column: 1/2;
     grid-row: 1/2;
     /* align-self: stretch; */
-}
+  }
 
-h1{
+  h1 {
     grid-column: 1/2;
     grid-row: 1/2;
     font-family: Futura;
     color: white;
     font-size: 8.1rem;
     margin-left: 5%;
-}
+  }
 
-.program{
+  .program {
     margin-top: 8%;
-place-self: start;
-}
+    place-self: start;
+  }
 
-.aarstal{
+  .aarstal {
     place-self: center start;
-}
+  }
 
-a{
+  a {
     grid-column: 1/2;
     grid-row: 1/2;
     text-decoration: none;
     color: white;
     font-family: Futura;
     font-size: 2.6rem;
-}
+  }
 
-a:hover{
+  a:hover {
     text-decoration: underline;
     text-decoration-thickness: 2px; /* Gør linjen tyndere */
     text-underline-offset: 8px; /* Flytter linjen lidt væk fra teksten */
-}
+  }
 
-.button1{
-    img{
-        width: 30px;
-        margin-right: 8px;
+  .button1 {
+    img {
+      width: 30px;
+      margin-right: 8px;
     }
     place-self: center start;
     margin-top: 20%;
     margin-left: 5%;
-}
+  }
 
-.button2{
-    img{
-        width: 30px;
-        margin-right: 8px;
+  .button2 {
+    img {
+      width: 30px;
+      margin-right: 8px;
     }
     place-self: center start;
     margin-top: 32%;
     margin-left: 5%;
-}
+  }
 
-/* Scroll ved klik af pil ned knap */
-:root {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
+  /* Scroll ved klik af pil ned knap */
+  :root {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
 </style>
