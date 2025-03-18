@@ -1,6 +1,7 @@
 ---
 const { baggrundsbillede, sektionh1, pil } = Astro.props;
 import Eventscard from "./Eventscard.astro";
+import Buttons from "./Buttons.astro";
 ---
 
 <section class="events_section">
@@ -40,6 +41,9 @@ import Eventscard from "./Eventscard.astro";
         tid="Kl 19.00"
       />
     </div>
+  </div>
+  <div class="knap">
+    <Buttons class="knap" color="" title="SE HELE PROGRAMMET HER" />
   </div>
   <img class="pil" src={pil} alt="" />
 </section>
@@ -100,5 +104,13 @@ import Eventscard from "./Eventscard.astro";
     width: 5%;
     place-self: end center;
     margin-bottom: 40px;
+  }
+
+  .knap {
+    display: block;
+    place-self: end center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: 13%;
   }
 </style>
