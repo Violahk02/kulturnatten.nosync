@@ -22,7 +22,6 @@
 }
 
 body {
-  margin: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(
@@ -34,6 +33,10 @@ body {
     #ffc22d 100%
   );
   background: co;
+}
+
+.programside {
+  margin: 40px;
 }
 
 h1,
