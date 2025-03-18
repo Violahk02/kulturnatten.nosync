@@ -82,22 +82,27 @@ const dayEvents = [
   .schedule-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     padding: 20px;
     justify-items: center;
   }
 
   .schedule-container {
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 450px;
-    color: black;
-    font-family: sans-serif;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 450px;
+  color: black;
+  font-family: sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+}
+
+.schedule-container:hover {
+  transform: scale(1.05);
+}
 
   .schedule-header {
     display: flex;

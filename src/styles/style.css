@@ -66,3 +66,15 @@ p {
   justify-content: start;
   gap: 20px;
 }
+
+.Tidsplantitle {
+  font-size: 8.1rem;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .Tidsplantitle {
+    font-size: 5rem;
+    color: #ffffff;
+  }
+}
