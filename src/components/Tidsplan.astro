@@ -9,7 +9,7 @@ const nightEvents = [
   { time: "23.00", event: "Smag på verden", place: "Værftet" },
   { time: "23.30", event: "Silent Disco", place: "Torvet" },
   { time: "00.00", event: "Fyrværkeri", place: "Havnen" },
-  { time: "00.30", event: "After Party", place: "Diskotek H" }
+  { time: "00.30", event: "After Party", place: "Diskotek H" },
 ];
 
 const dayEvents = [
@@ -22,14 +22,17 @@ const dayEvents = [
   { time: "18.00", event: "Mød FC Helsingør", place: "Torvet" },
   { time: "18.30", event: "Byvandring", place: "Hele byen" },
   { time: "19.00", event: "Koncert", place: "Spillested" },
-  { time: "19.30", event: "Teaterperformance", place: "Bycentret" }
+  { time: "19.30", event: "Teaterperformance", place: "Bycentret" },
 ];
 ---
 
 <div class="schedule-grid">
-  <div class="schedule-container" style="background-image: url('public/img/tidsplan-01.svg')">
+  <div
+    class="schedule-container"
+    style="background-image: url('/img/tidsplan-01.svg')"
+  >
     <div class="schedule-header">
-      <img src="public/img/tidsplan-03.svg" alt="Kulturnat Logo" class="logo" />
+      <img src="/img/tidsplan-03.svg" alt="Kulturnat Logo" class="logo" />
       <span class="date">26. september</span>
     </div>
     <table class="schedule-table">
@@ -41,20 +44,25 @@ const dayEvents = [
         </tr>
       </thead>
       <tbody>
-        {dayEvents.map(event => (
-          <tr>
-            <td>{event.time}</td>
-            <td>{event.event}</td>
-            <td>{event.place}</td>
-          </tr>
-        ))}
+        {
+          dayEvents.map((event) => (
+            <tr>
+              <td>{event.time}</td>
+              <td>{event.event}</td>
+              <td>{event.place}</td>
+            </tr>
+          ))
+        }
       </tbody>
     </table>
   </div>
 
-  <div class="schedule-container" style="background-image: url('public/img/tidsplan-02.svg')">
+  <div
+    class="schedule-container"
+    style="background-image: url('/img/tidsplan-02.svg')"
+  >
     <div class="schedule-header">
-      <img src="public/img/tidsplan-03.svg" alt="Kulturnat Logo" class="logo" />
+      <img src="/img/tidsplan-03.svg" alt="Kulturnat Logo" class="logo" />
       <span class="date">26. september</span>
     </div>
     <table class="schedule-table">
@@ -66,13 +74,15 @@ const dayEvents = [
         </tr>
       </thead>
       <tbody>
-        {nightEvents.map(event => (
-          <tr>
-            <td>{event.time}</td>
-            <td>{event.event}</td>
-            <td>{event.place}</td>
-          </tr>
-        ))}
+        {
+          nightEvents.map((event) => (
+            <tr>
+              <td>{event.time}</td>
+              <td>{event.event}</td>
+              <td>{event.place}</td>
+            </tr>
+          ))
+        }
       </tbody>
     </table>
   </div>
@@ -89,20 +99,20 @@ const dayEvents = [
   }
 
   .schedule-container {
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 450px;
-  color: black;
-  font-family: sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: transform 0.3s ease-in-out;
-}
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 450px;
+    color: black;
+    font-family: sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+  }
 
-.schedule-container:hover {
-  transform: scale(1.05);
-}
+  .schedule-container:hover {
+    transform: scale(1.05);
+  }
 
   .schedule-header {
     display: flex;
@@ -127,7 +137,8 @@ const dayEvents = [
     overflow: hidden;
   }
 
-  .schedule-table th, .schedule-table td {
+  .schedule-table th,
+  .schedule-table td {
     padding: 10px;
     border-bottom: 1px solid hsl(0, 4%, 5%);
   }
